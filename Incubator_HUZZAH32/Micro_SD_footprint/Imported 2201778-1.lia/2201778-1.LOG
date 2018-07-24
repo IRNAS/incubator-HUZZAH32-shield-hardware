@@ -1,0 +1,35 @@
+PCAD Importer Log
+Project : 2201778-1.LibPkg
+
+Section : D:\incubator-HUZZAH32-shield-hardware\Incubator_HUZZAH32\Micro_SD_footprint\2201778-1.lia
+    Section : PCB Library - 2201778-1.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token 2201778-1 On Line 246
+            Warning - 1 : Skipping Token attachedSymbol On Line 439
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - 2201778-1.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token padStyleDef On Line 33
+            Warning - 1 : Skipping Token padStyleDef On Line 45
+            Warning - 1 : Skipping Token padStyleDef On Line 57
+            Warning - 1 : Skipping Token padStyleDef On Line 69
+            Warning - 1 : Skipping Token padStyleDef On Line 81
+            Warning - 1 : Skipping Token padStyleDef On Line 93
+            Warning - 1 : Skipping Token padStyleDef On Line 105
+            Warning - 1 : Skipping Token multiLayer On Line 180
+            Warning - 1 : Skipping Token layerContents On Line 198
+            Warning - 1 : Skipping Token layerContents On Line 210
+            Warning - 1 : Skipping Token layerContents On Line 218
+        EndSection
+
+        Section : Generating SCH Library - 2201778-1.SchLib
+        EndSection
+    EndSection
+EndSection

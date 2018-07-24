@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=One_wire Pin=IC1-3
+Removed Pin From Net: NetName=SCL Pin=IC1-8
+Added Pin To Net: NetName=SCL Pin=IC1-3
+Added Pin To Net: NetName=One_wire Pin=IC1-8

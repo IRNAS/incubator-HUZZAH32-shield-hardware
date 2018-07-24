@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Incubator_HUZZAH32.PcbDoc   7/23/2018  1:41:42 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Incubator_HUZZAH32-RoundHoles.TXT
+ASCII SlotHoles File : Incubator_HUZZAH32-SlotHoles.TXT
+EIA File   : Incubator_HUZZAH32.DRL
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             39        PTH        12.87inch (326.84mm)
+T2      16mil (0.4mm)                                             Round             1         PTH        0.00inch (0.00mm)
+T3      20mil (0.5mm)                                             Round             4         PTH        4.33inch (109.93mm)
+T4      28mil (0.7mm)                                             Round             5         PTH        3.84inch (97.47mm)
+T5      35mil (0.9mm)                                             Round             44        PTH        10.15inch (257.77mm)
+T6      43mil (1.1mm)                                             Round             10        PTH        0.90inch (22.86mm)
+T7      79mil (2mm)                                               Slot              1         NPTH       0.08inch (1.99mm)
+T8      80mil (2.032mm)                                           Slot              3         NPTH       3.59inch (91.09mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              107
+
+Total Processing Time (hh:mm:ss) : 00:00:00

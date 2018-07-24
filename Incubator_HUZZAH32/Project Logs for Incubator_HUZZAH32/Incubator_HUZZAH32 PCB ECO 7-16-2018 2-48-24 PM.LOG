@@ -1,0 +1,36 @@
+Added Component: Designator=U1(ESP32)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Adafruit Industries"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "3405"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=19.95 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "276"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1528-2181-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=CD/DAT3 Pin=U1-5
+Added Pin To Net: NetName=A1/DAC1 Pin=U1-6
+Added Pin To Net: NetName=DAT0 Pin=U1-9
+Added Pin To Net: NetName=CMD Pin=U1-10
+Added Pin To Net: NetName=CMD Pin=U1-10
+Added Pin To Net: NetName=SCK Pin=U1-11
+Added Pin To Net: NetName=SCK Pin=U1-11
+Added Pin To Net: NetName=CMD Pin=U1-12
+Added Pin To Net: NetName=CMD Pin=U1-12
+Added Pin To Net: NetName=DAT0 Pin=U1-13
+Added Pin To Net: NetName=DAT0 Pin=U1-13
+Added Pin To Net: NetName=RX Pin=U1-14
+Added Pin To Net: NetName=TX Pin=U1-15
+Added Pin To Net: NetName=SDA Pin=U1-17
+Added Pin To Net: NetName=SCL Pin=U1-18
+Added Pin To Net: NetName=One_wire Pin=U1-19
+Added Pin To Net: NetName=Button2 Pin=U1-20
+Added Pin To Net: NetName=HALL Pin=U1-21
+Added Pin To Net: NetName=Button3 Pin=U1-22
+Added Pin To Net: NetName=Button1 Pin=U1-23
+Added Pin To Net: NetName=Button4 Pin=U1-24
+Added Pin To Net: NetName=NetB1_1 Pin=U1-25
+Added Pin To Net: NetName=+5V Pin=U1-26
+Added Member To Class: ClassName=MCU Member=Component U1 ESP32

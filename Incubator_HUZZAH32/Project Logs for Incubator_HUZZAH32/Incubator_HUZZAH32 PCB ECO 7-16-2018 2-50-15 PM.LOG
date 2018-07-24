@@ -1,0 +1,16 @@
+Added Component: Designator=T1(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T2(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T3(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T4(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetR1_1 Pin=T1-1
+Added Pin To Net: NetName=NetR2_1 Pin=T2-1
+Added Pin To Net: NetName=NetR3_1 Pin=T3-1
+Added Pin To Net: NetName=NetR4_1 Pin=T4-1
+Added Member To Class: ClassName=MCU Member=Component T1 Touch button
+Added Member To Class: ClassName=MCU Member=Component T2 Touch button
+Added Member To Class: ClassName=MCU Member=Component T3 Touch button
+Added Member To Class: ClassName=MCU Member=Component T4 Touch button

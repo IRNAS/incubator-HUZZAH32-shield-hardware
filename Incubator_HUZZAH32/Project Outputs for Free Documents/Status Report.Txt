@@ -1,0 +1,14 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [Incubator_HUZZAH32.PcbDoc]
+   Generated File[Incubator_HUZZAH32-RoundHoles.TXT]
+   Generated File[Incubator_HUZZAH32-SlotHoles.TXT]
+   Generated File[Incubator_HUZZAH32.DRL]
+   Generated File[Incubator_HUZZAH32.LDP]
+   Generated File[Incubator_HUZZAH32.DRR]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 1:23:47 PM On 7/23/2018

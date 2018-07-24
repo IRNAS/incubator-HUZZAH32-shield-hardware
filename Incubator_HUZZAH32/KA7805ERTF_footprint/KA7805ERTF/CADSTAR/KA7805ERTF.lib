@@ -1,0 +1,17 @@
+.KA7805ERTF :1 ;IC, Fairchild, KA7805ERTF
+KA7805ERTF
+*STM IC
+*NGS
+*PLB 1="INPUT" 2="GND" 3="OUTPUT"
+*MXP 3
+*DFN KA7805ERTF
+~!Manufacturer_Name (ON Semiconductor)
+~!Manufacturer_Part_Number (KA7805ERTF)
+~!RS Part Number (8078809)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/8078809)
+~!Arrow Part Number (KA7805ERTF)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/ka7805ertf/on-semiconductor)
+~!Link Datasheet (http://www.onsemi.com/pub/Collateral/KA7824E-D.pdf)
+~!Height (2mm)
+KA7805ERTF
+1.1!U 2.1!U 3.1!U 
