@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=CD/DAT3 Pin=J1-2
+Removed Pin From Net: NetName=CMD Pin=J1-3
+Removed Pin From Net: NetName=+3V3 Pin=J1-4
+Removed Pin From Net: NetName=SCK Pin=J1-5
+Removed Pin From Net: NetName=GND Pin=J1-6
+Removed Pin From Net: NetName=DAT0 Pin=J1-7
+Removed Pin From Net: NetName=GND Pin=J1-11
+Removed Pin From Net: NetName=GND Pin=J1-12
+Removed Pin From Net: NetName=GND Pin=J1-13
+Removed Pin From Net: NetName=GND Pin=J1-14
+Removed Pin From Net: NetName=GND Pin=J1-15
+Removed Pin From Net: NetName=GND Pin=J1-16
+Removed Member From Class: ClassName=MCU Member=J1
+Added Room: Name=MCU

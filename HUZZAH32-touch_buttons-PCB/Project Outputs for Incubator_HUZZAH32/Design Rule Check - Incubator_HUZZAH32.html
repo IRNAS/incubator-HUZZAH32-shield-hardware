@@ -1,0 +1,414 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://D:\Altium17\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11/14/2018</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:01:09 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc" class="file"><acronym title="D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc">D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">22</td></tr>
+</table>
+</td>
+</table><a name="ID0KON4RHGKLLZMNS22V4J4LP5SKPJTOXGCKUZH0EU0GNCBQ5H4C5E"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5VQP414OS4ZYEV2Z1UUDQX1V4OLG2B0GIJXJJ4KWOT5AAFD4ERQL">Clearance Constraint (Gap=0.203mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQOD0BIAW2T4KORL0R3PF0CDFUDPV3KP0ZDH0NPM5KKPGOWJT550B">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKPG413RVLHYEJOI5LE1EUI5CPDGTVC4T5XXMXJGOA5HAZ5SYA1D">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCTNIGP2VJOIDBDU2ASDEQ2AONM3BM4EPPW0ILVLPK00CKCLDHSHF">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDP0LFYHFYIVWJNMIOMWZVQVSPJQMIZO4E0GYILNKSO44Y0RB5MFE">Width Constraint (Min=0.178mm) (Max=0.762mm) (Preferred=0.254mm) (InNetClass('Buttons'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZUX43FYZQKTQMJEQKUH1EPY243LTHKIHD2NNQPQ3ZJPJROX4NLH">Width Constraint (Min=0.254mm) (Max=0.762mm) (Preferred=0.762mm) (InNet('+3V3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQXFPKLEGKO4PDPNS2CWXJMBKCDMPB0EU4MPY34ISOUV2TP4VD5OC">Width Constraint (Min=0.178mm) (Max=0.762mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOXHGJACENRSOLEMZXPXKP3ZYFGEXV1ZWFIBGW4I3R4PIS4BKRV0D">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDT4ZIJR00AFWRFXNRF2ESOYWK5EUFTCJMJJ2DW4KQTOV30G14JTVH">Minimum Annular Ring (Minimum=0.05mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDW1F0JSPRBFVDOHRFOW1IZBI5OCL5PORSTCYYGAJSMQ4QHMYCIYRF">Hole Size Constraint (Min=0.025mm) (Max=5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2RPKTPXC2ATUJUOCY45F4MOTAM4QBOD2HH2BUYPWK5V42MGOIQUN">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDZUGYR12GQIILYITVVGOLH0EOKQYNSLKJYT5ZDORCCEE2M30OQEG">Minimum Solder Mask Sliver (Gap=0.001mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV1TTM5JEQ1G5MPUHU3BQQCJQ1IRECTBNSGPBTSKND5ULD1F2FBNJ">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB4SLCPBGUH50NFB3IRLDCZB3PJUXL2MCTHBJ5XEKJ3FN4OYWBOXJ">Silk to Silk (Clearance=0.1mm) (All),(All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2INFC5ZMF4SEE1PQYC4DUE5DNCRITVJW4JU2QIH1TXVULDOILHDB">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMHZHK1X5BGBGGTD5PG0UQFPYWEGVKTSH1HBXGGGEWQDRNSBLW52L">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">22</td>
+</tr>
+</table><br><a name="IDT4ZIJR00AFWRFXNRF2ESOYWK5EUFTCJMJJ2DW4KQTOV30G14JTVH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Minimum Annular Ring (Minimum=0.05mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4557.156mil|Location2.X=4559.468mil|Location1.Y=3741.542mil|Location2.Y=3743.854mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4557.156mil|Location2.X=4559.468mil|Location1.Y=3741.542mil|Location2.Y=3743.854mil|Absolute=True">Minimum Annular Ring: (Collision &lt; 0.05mm) Pad P5-(117.5mm,94.369mm) on Multi-Layer (Annular Ring=0mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3740.227mil|Location2.X=3742.539mil|Location1.Y=3741.542mil|Location2.Y=3743.854mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3740.227mil|Location2.X=3742.539mil|Location1.Y=3741.542mil|Location2.Y=3743.854mil|Absolute=True">Minimum Annular Ring: (Collision &lt; 0.05mm) Pad P5-(96.75mm,94.369mm) on Multi-Layer (Annular Ring=0mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3739.833mil|Location2.X=3742.145mil|Location1.Y=2843.905mil|Location2.Y=2846.217mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3739.833mil|Location2.X=3742.145mil|Location1.Y=2843.905mil|Location2.Y=2846.217mil|Absolute=True">Minimum Annular Ring: (Collision &lt; 0.05mm) Pad P5-(96.74mm,71.569mm) on Multi-Layer (Annular Ring=0mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4557.156mil|Location2.X=4559.468mil|Location1.Y=2843.905mil|Location2.Y=2846.217mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4557.156mil|Location2.X=4559.468mil|Location1.Y=2843.905mil|Location2.Y=2846.217mil|Absolute=True">Minimum Annular Ring: (Collision &lt; 0.05mm) Pad P5-(117.5mm,71.569mm) on Multi-Layer (Annular Ring=0mm) On (Top Layer)</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDV1TTM5JEQ1G5MPUHU3BQQCJQ1IRECTBNSGPBTSKND5ULD1F2FBNJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6641.03mil|Location2.X=6644.655mil|Location1.Y=3280.012mil|Location2.Y=3283.637mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6641.03mil|Location2.X=6644.655mil|Location1.Y=3280.012mil|Location2.Y=3283.637mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.1mm) Between Arc (162.128mm,83.363mm) on Top Overlay And Pad IC1-5(169.473mm,83.358mm) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.546mil|Location2.X=2104.733mil|Location1.Y=3098.191mil|Location2.Y=3103.378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.546mil|Location2.X=2104.733mil|Location1.Y=3098.191mil|Location2.Y=3103.378mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.051mm &lt; 0.1mm) Between Track (53.422mm,78.882mm)(53.422mm,80.752mm) on Bottom Overlay And Pad U6-13(52.689mm,77.385mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.051mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.495mil|Location2.X=2104.682mil|Location1.Y=3291.274mil|Location2.Y=3296.461mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.495mil|Location2.X=2104.682mil|Location1.Y=3291.274mil|Location2.Y=3296.461mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.059mm &lt; 0.1mm) Between Track (53.412mm,83.792mm)(53.412mm,84.532mm) on Bottom Overlay And Pad U6-12(52.689mm,82.285mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.059mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.628mil|Location2.X=2104.815mil|Location1.Y=3182.167mil|Location2.Y=3187.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.628mil|Location2.X=2104.815mil|Location1.Y=3182.167mil|Location2.Y=3187.354mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.086mm &lt; 0.1mm) Between Track (53.422mm,78.882mm)(53.422mm,80.752mm) on Bottom Overlay And Pad U6-12(52.689mm,82.285mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.086mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.654mil|Location2.X=2104.841mil|Location1.Y=3381.874mil|Location2.Y=3387.061mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2099.654mil|Location2.X=2104.841mil|Location1.Y=3381.874mil|Location2.Y=3387.061mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.063mm &lt; 0.1mm) Between Track (53.432mm,86.092mm)(53.432mm,87.639mm) on Bottom Overlay And Pad U6-11(52.789mm,85.335mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.063mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1546.296mil|Location2.X=1551.483mil|Location1.Y=2927.867mil|Location2.Y=2933.054mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1546.296mil|Location2.X=1551.483mil|Location1.Y=2927.867mil|Location2.Y=2933.054mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.097mm &lt; 0.1mm) Between Track (39.342mm,74.582mm)(39.342mm,75.422mm) on Bottom Overlay And Pad U6-9(40.489mm,73.885mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0.097mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDB4SLCPBGUH50NFB3IRLDCZB3PJUXL2MCTHBJ5XEKJ3FN4OYWBOXJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1885.12mil|Location2.X=1888.745mil|Location1.Y=3505.476mil|Location2.Y=3509.1mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1885.12mil|Location2.X=1888.745mil|Location1.Y=3505.476mil|Location2.Y=3509.1mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "T5" (46.406mm,89.129mm) on Top Overlay And Arc (50.978mm,83.261mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5574.766mil|Location2.X=5578.39mil|Location1.Y=3021.447mil|Location2.Y=3025.072mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5574.766mil|Location2.X=5578.39mil|Location1.Y=3021.447mil|Location2.Y=3025.072mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0.1mm) Between Text "GND" (141.808mm,74.066mm) on Top Overlay And Arc (142.037mm,83.363mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5436.619mil|Location2.X=5444.319mil|Location1.Y=3067.41mil|Location2.Y=3074.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5436.619mil|Location2.X=5444.319mil|Location1.Y=3067.41mil|Location2.Y=3074.342mil|Absolute=True">Silk To Silk Clearance Constraint: (0.003mm &lt; 0.1mm) Between Text "+3V3" (138.278mm,74.295mm) on Top Overlay And Arc (142.037mm,83.363mm) on Top Overlay Silk Text to Silk Clearance [0.003mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5562.966mil|Location2.X=5568.153mil|Location1.Y=2791.593mil|Location2.Y=2796.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5562.966mil|Location2.X=5568.153mil|Location1.Y=2791.593mil|Location2.Y=2796.78mil|Absolute=True">Silk To Silk Clearance Constraint: (0.095mm &lt; 0.1mm) Between Text "One_wire" (141.199mm,69.85mm) on Top Overlay And Track (140.462mm,71.12mm)(148.082mm,71.12mm) on Top Overlay Silk Text to Silk Clearance [0.095mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1637.085mil|Location2.X=1642.272mil|Location1.Y=3716.396mil|Location2.Y=3721.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1637.085mil|Location2.X=1642.272mil|Location1.Y=3716.396mil|Location2.Y=3721.583mil|Absolute=True">Silk To Silk Clearance Constraint: (0.085mm &lt; 0.1mm) Between Text "C4" (41.148mm,93.345mm) on Top Overlay And Track (36.714mm,94.605mm)(87.554mm,94.605mm) on Top Overlay Silk Text to Silk Clearance [0.085mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5930.847mil|Location2.X=5936.034mil|Location1.Y=3776.43mil|Location2.Y=3781.617mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5930.847mil|Location2.X=5936.034mil|Location1.Y=3776.43mil|Location2.Y=3781.617mil|Absolute=True">Silk To Silk Clearance Constraint: (0.052mm &lt; 0.1mm) Between Text "C2" (150.876mm,96.088mm) on Bottom Overlay And Track (145.644mm,95.834mm)(150.724mm,95.834mm) on Bottom Overlay Silk Text to Silk Clearance [0.052mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5931.069mil|Location2.X=5936.257mil|Location1.Y=3776.428mil|Location2.Y=3781.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5931.069mil|Location2.X=5936.257mil|Location1.Y=3776.428mil|Location2.Y=3781.615mil|Absolute=True">Silk To Silk Clearance Constraint: (0.052mm &lt; 0.1mm) Between Text "C2" (150.876mm,96.088mm) on Bottom Overlay And Track (150.724mm,93.243mm)(150.724mm,95.834mm) on Bottom Overlay Silk Text to Silk Clearance [0.052mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6898.917mil|Location2.X=6904.104mil|Location1.Y=3183.168mil|Location2.Y=3188.355mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6898.917mil|Location2.X=6904.104mil|Location1.Y=3183.168mil|Location2.Y=3188.355mil|Absolute=True">Silk To Silk Clearance Constraint: (0.06mm &lt; 0.1mm) Between Text "TX" (176.403mm,81.585mm) on Bottom Overlay And Track (175.168mm,73.028mm)(175.168mm,93.538mm) on Bottom Overlay Silk Text to Silk Clearance [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6899.417mil|Location2.X=6904.604mil|Location1.Y=3095.728mil|Location2.Y=3100.915mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6899.417mil|Location2.X=6904.604mil|Location1.Y=3095.728mil|Location2.Y=3100.915mil|Absolute=True">Silk To Silk Clearance Constraint: (0.085mm &lt; 0.1mm) Between Text "SDA" (176.428mm,79.197mm) on Bottom Overlay And Track (175.168mm,73.028mm)(175.168mm,93.538mm) on Bottom Overlay Silk Text to Silk Clearance [0.085mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6898.917mil|Location2.X=6904.104mil|Location1.Y=3313.407mil|Location2.Y=3318.593mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6898.917mil|Location2.X=6904.104mil|Location1.Y=3313.407mil|Location2.Y=3318.593mil|Absolute=True">Silk To Silk Clearance Constraint: (0.06mm &lt; 0.1mm) Between Text "RX" (176.403mm,84.226mm) on Bottom Overlay And Track (175.168mm,73.028mm)(175.168mm,93.538mm) on Bottom Overlay Silk Text to Silk Clearance [0.06mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6899.417mil|Location2.X=6904.604mil|Location1.Y=3431.728mil|Location2.Y=3436.915mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6899.417mil|Location2.X=6904.604mil|Location1.Y=3431.728mil|Location2.Y=3436.915mil|Absolute=True">Silk To Silk Clearance Constraint: (0.085mm &lt; 0.1mm) Between Text "GND" (176.428mm,87.732mm) on Bottom Overlay And Track (175.168mm,73.028mm)(175.168mm,93.538mm) on Bottom Overlay Silk Text to Silk Clearance [0.085mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6899.417mil|Location2.X=6904.604mil|Location1.Y=3623.728mil|Location2.Y=3628.915mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\OneDrive\NewHarvest-incubator\Incubator_HUZZAH32-touch_buttons\Incubator_HUZZAH32.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6899.417mil|Location2.X=6904.604mil|Location1.Y=3623.728mil|Location2.Y=3628.915mil|Absolute=True">Silk To Silk Clearance Constraint: (0.085mm &lt; 0.1mm) Between Text "GPIO1" (176.428mm,92.608mm) on Bottom Overlay And Track (175.168mm,73.028mm)(175.168mm,93.538mm) on Bottom Overlay Silk Text to Silk Clearance [0.085mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

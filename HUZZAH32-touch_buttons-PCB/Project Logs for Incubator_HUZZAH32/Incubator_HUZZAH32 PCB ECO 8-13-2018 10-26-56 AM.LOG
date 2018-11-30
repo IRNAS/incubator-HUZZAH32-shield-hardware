@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=One_wire Pin=R7-1
+Removed Pin From Net: NetName=+3V3 Pin=R7-2
+Removed Member From Class: ClassName=MCU Member=R1
+Removed Member From Class: ClassName=MCU Member=R2
+Removed Member From Class: ClassName=MCU Member=R3
+Removed Member From Class: ClassName=MCU Member=R4
+Removed Member From Class: ClassName=MCU Member=R7
+Removed Member From Class: ClassName=MCU Member=T1
+Removed Member From Class: ClassName=MCU Member=T2
+Removed Member From Class: ClassName=MCU Member=T3
+Removed Member From Class: ClassName=MCU Member=T4

@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:50:12 AM On 11/25/2018
+
+Output: Bill of Materials production
+Type  : BOM
+From  : Variant [[No Variations]] of PCB Document [Incubator_HUZZAH32.PcbDoc]
+   Generated File[Bill of Materials production-Incubator_HUZZAH32.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:50:29 AM On 11/25/2018

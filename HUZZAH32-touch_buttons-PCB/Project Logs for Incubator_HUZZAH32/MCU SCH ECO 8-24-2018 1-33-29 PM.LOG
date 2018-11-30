@@ -1,0 +1,4 @@
+Remove Pin=U6-2 From Net=CD/DAT3
+Remove Pin=U6-3 From Net=CMD
+Remove Pin=U6-5 From Net=SCK
+Remove Pin=U6-7 From Net=DAT0

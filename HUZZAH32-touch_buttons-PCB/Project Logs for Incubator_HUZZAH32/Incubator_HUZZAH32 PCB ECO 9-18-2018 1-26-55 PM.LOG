@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=+3V3 Pin=U2-6
+Removed Pin From Net: NetName=+3V3 Pin=U3-6
+Removed Pin From Net: NetName=+3V3 Pin=U4-6
+Removed Pin From Net: NetName=+3V3 Pin=U5-6
+Added Pin To Net: NetName=GND Pin=U2-6
+Added Pin To Net: NetName=GND Pin=U3-6
+Added Pin To Net: NetName=GND Pin=U4-6
+Added Pin To Net: NetName=GND Pin=U5-6
+Change Class Name : Old Net Name=MCU New Net Name=Incubator_HUZZAH32

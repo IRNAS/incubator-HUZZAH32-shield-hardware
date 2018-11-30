@@ -1,0 +1,204 @@
+Added Component: Designator=C3(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Capacitance"; Value = "10 pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kyocera AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "06035C100KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2665201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10 %"; VariantName = "[No Variations]"
+Added Component: Designator=C4(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2218702RL"; VariantName = "[No Variations]"
+Added Component: Designator=C5(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Capacitance"; Value = "10 pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kyocera AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "06035C100KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2665201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10 %"; VariantName = "[No Variations]"
+Added Component: Designator=C6(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2218702RL"; VariantName = "[No Variations]"
+Added Component: Designator=C7(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Capacitance"; Value = "10 pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kyocera AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "06035C100KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2665201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10 %"; VariantName = "[No Variations]"
+Added Component: Designator=C8(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2218702RL"; VariantName = "[No Variations]"
+Added Component: Designator=C9(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Capacitance"; Value = "10 pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Size/Dimension"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/204/cx7r-204167.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/28611/1679506-28611544.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/22677/1679506-22677033.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/16327/cx7r-16327067.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/5416/cx7r-5416268.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/15212/getdatasheetpartid-317346-15212284.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kyocera AVX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "06035C100KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "50 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2665201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance (%)"; Value = "±10 %"; VariantName = "[No Variations]"
+Added Component: Designator=C10(CAP0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2218702RL"; VariantName = "[No Variations]"
+Added Component: Designator=T1(TTP223)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T2(TTP223)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T3(TTP223)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T4(TTP223)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T5(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T6(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T7(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Component: Designator=T8(Touch_Button)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=+3V3 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=+3V3 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=+3V3 Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=+3V3 Pin=C10-2
+Added Pin To Net: NetName=GND Pin=T1-2
+Added Pin To Net: NetName=GND Pin=T1-4
+Added Pin To Net: NetName=+3V3 Pin=T1-5
+Added Pin To Net: NetName=+3V3 Pin=T1-6
+Added Pin To Net: NetName=GND Pin=T2-2
+Added Pin To Net: NetName=GND Pin=T2-4
+Added Pin To Net: NetName=+3V3 Pin=T2-5
+Added Pin To Net: NetName=+3V3 Pin=T2-6
+Added Pin To Net: NetName=GND Pin=T3-2
+Added Pin To Net: NetName=GND Pin=T3-4
+Added Pin To Net: NetName=+3V3 Pin=T3-5
+Added Pin To Net: NetName=+3V3 Pin=T3-6
+Added Pin To Net: NetName=GND Pin=T4-2
+Added Pin To Net: NetName=GND Pin=T4-4
+Added Pin To Net: NetName=+3V3 Pin=T4-5
+Added Pin To Net: NetName=+3V3 Pin=T4-6
+Added Pin To Net: NetName=Button1 Pin=T1-1
+Added Pin To Net: NetName=Button1 Pin=U1-24
+Added Net: Name=Button1
+Added Pin To Net: NetName=Button2 Pin=T2-1
+Added Pin To Net: NetName=Button2 Pin=U1-23
+Added Net: Name=Button2
+Added Pin To Net: NetName=Button3 Pin=T3-1
+Added Pin To Net: NetName=Button3 Pin=U1-22
+Added Net: Name=Button3
+Added Pin To Net: NetName=Button4 Pin=T4-1
+Added Pin To Net: NetName=Button4 Pin=U1-20
+Added Net: Name=Button4
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=T1-3
+Added Pin To Net: NetName=NetC3_2 Pin=T5-1
+Added Pin To Net: NetName=NetC3_2 Pin=T5-1
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=T2-3
+Added Pin To Net: NetName=NetC5_2 Pin=T6-1
+Added Pin To Net: NetName=NetC5_2 Pin=T6-1
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=NetC7_2 Pin=T3-3
+Added Pin To Net: NetName=NetC7_2 Pin=T7-1
+Added Pin To Net: NetName=NetC7_2 Pin=T7-1
+Added Net: Name=NetC7_2
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=T4-3
+Added Pin To Net: NetName=NetC9_2 Pin=T8-1
+Added Pin To Net: NetName=NetC9_2 Pin=T8-1
+Added Net: Name=NetC9_2
+Added Member To Class: ClassName=MCU Member=Component C3 10pF cap
+Added Member To Class: ClassName=MCU Member=Component C4 150nF cap
+Added Member To Class: ClassName=MCU Member=Component C5 10pF cap
+Added Member To Class: ClassName=MCU Member=Component C6 150nF cap
+Added Member To Class: ClassName=MCU Member=Component C7 10pF cap
+Added Member To Class: ClassName=MCU Member=Component C8 150nF cap
+Added Member To Class: ClassName=MCU Member=Component C9 10pF cap
+Added Member To Class: ClassName=MCU Member=Component C10 150nF cap
+Added Member To Class: ClassName=MCU Member=Component T1 Touch sensor
+Added Member To Class: ClassName=MCU Member=Component T2 Touch sensor
+Added Member To Class: ClassName=MCU Member=Component T3 Touch sensor
+Added Member To Class: ClassName=MCU Member=Component T4 Touch sensor
+Added Member To Class: ClassName=MCU Member=Component T5 Touch button
+Added Member To Class: ClassName=MCU Member=Component T6 Touch button
+Added Member To Class: ClassName=MCU Member=Component T7 Touch button
+Added Member To Class: ClassName=MCU Member=Component T8 Touch button

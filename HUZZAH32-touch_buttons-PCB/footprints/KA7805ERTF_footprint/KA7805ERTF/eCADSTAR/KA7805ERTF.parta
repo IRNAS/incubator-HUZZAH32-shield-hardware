@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_1028503"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-06-18-13:02:08)
+    (utime 2018-07-18-15:29:37)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "KA7805ERTF")
+)
+
+
+(pinAssign "ECS_1028503"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-06-18-13:02:08)
+    (utime 2018-07-18-15:29:37)
+    (interface
+        (port "1" (symbPinId 1) (portName "INPUT") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "GND") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "OUTPUT") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1028503")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "KA7805ERTF")
+)
+
+
+(part "KA7805ERTF"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-06-18-13:02:08)
+    (utime 2018-07-18-15:29:37)
+    (packageRef "KA7805ERTF")
+    (pinAssignRef "ECS_1028503")
+    (interface
+        (port "1" (symbPinId 1) (portName "INPUT") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "GND") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "OUTPUT") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "IC")
+    (property "description" "IC, Fairchild, KA7805ERTF")
+    (property "uaManufacturer" "ON Semiconductor")
+    (property "uaManufacturerPartNumber" "KA7805ERTF")
+    (property "uaVendor" "Arrow")
+    (property "uaVendorReference" "KA7805ERTF")
+    (property "uaAttribute1" "http://www.onsemi.com/pub/Collateral/KA7824E-D.pdf")
+    (property "compAreaTopHeight" 2)
+)
+
+

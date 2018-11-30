@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=One_wire Pin=IC1-8
+Change Component Comment : Designator=P6 Old Comment=Header 2 New Comment=Power
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-8
+Change Net Name : Old Net Name=NetC1_2 New Net Name=12V

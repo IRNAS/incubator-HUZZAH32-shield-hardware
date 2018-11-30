@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP KA7805ERTF
+D IC, Fairchild, KA7805ERTF
+K
+F http://www.onsemi.com/pub/Collateral/KA7824E-D.pdf
+$ENDCMP
+#
+#End Doc Library

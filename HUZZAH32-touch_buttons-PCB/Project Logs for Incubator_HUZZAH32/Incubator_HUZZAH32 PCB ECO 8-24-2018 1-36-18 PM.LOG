@@ -1,0 +1,13 @@
+Added Component: Designator=U6(micro_SD)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=CD/DAT3 Pin=U6-2
+Added Pin To Net: NetName=CMD Pin=U6-3
+Added Pin To Net: NetName=+3V3 Pin=U6-4
+Added Pin To Net: NetName=SCK Pin=U6-5
+Added Pin To Net: NetName=GND Pin=U6-6
+Added Pin To Net: NetName=DAT0 Pin=U6-7
+Added Pin To Net: NetName=GND Pin=U6-9
+Added Pin To Net: NetName=GND Pin=U6-10
+Added Pin To Net: NetName=GND Pin=U6-11
+Added Pin To Net: NetName=GND Pin=U6-13
+Added Member To Class: ClassName=MCU Member=Component U6 micro_SD
